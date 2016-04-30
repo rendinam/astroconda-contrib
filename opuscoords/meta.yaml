@@ -1,0 +1,29 @@
+{% set name = 'opuscoords' %}
+{% set version = '1.0.2' %}
+{% set number = '0' %}
+
+about:
+    home: https://github.com/spacetelescope/opuscoords
+    license: BSD
+    summary: opuscoords
+build:
+    number: {{ number }}
+package:
+    name: {{ name }}
+    version: {{ version }}
+requirements:
+    build:
+    - d2to1
+    - stsci.distutils
+    - setuptools
+    - numpy x.x
+    - python x.x
+    run:
+    - numpy x.x
+    - python x.x
+source:
+    git_tag: {{ version }}
+    git_url: https://github.com/spacetelescope/opuscoords.git
+test:
+    imports:
+    - opuscoords
