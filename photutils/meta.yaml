@@ -3,7 +3,7 @@ about:
     license: BSD
     summary: photutils
 build:
-    number: '0'
+    number: '1'
 package:
     name: photutils
     version: 0.2.1
@@ -15,6 +15,7 @@ requirements:
     - cython
     - matplotlib
     - numpy x.x
+    - scikit-image
     - scikit-learn
     - scipy
     - setuptools
@@ -24,6 +25,7 @@ requirements:
     - cython
     - matplotlib
     - numpy x.x
+    - scikit-image
     - scikit-learn
     - scipy
     - setuptools
