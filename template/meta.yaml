@@ -1,0 +1,40 @@
+{% set name = '' %}
+{% set version = '' %}
+{% set number = '0' %}
+
+about:
+    # Package homepage
+    home:
+    # Package license
+    license:
+    # A brief description
+    summary:
+
+package:
+    # Define these values above
+    name: {{ name }}
+    version: {{ version }}
+
+build:
+    # Define this value above
+    number: {{ number }}
+
+source:
+    fn: {{ name }}-{{ version }}.tar.gz
+    url: http://example.com/example/{{ name }}-{{ version }}.tar.gz
+
+requirements:
+    build:
+    # Dependencies required at BUILD-TIME go here
+    - setuptools
+    - python x.x
+    run:
+    # Dependencies required at RUN-TIME go here
+    # - ...
+
+#test:
+#   imports:
+#   # - (e.g. a_python_module)
+#
+#   commands:
+#   # - (e.g. program --help)
