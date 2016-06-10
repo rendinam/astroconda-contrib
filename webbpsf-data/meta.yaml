@@ -6,8 +6,8 @@ build:
     number: '0'
 package:
     name: webbpsf-data
-    version: 0.4.0
+    version: 0.5.0
 source:
-    fn: webbpsf-data-0.4.0.tar.gz
+    fn: webbpsf-data-0.5.0.tar.gz
     url:
-    - http://www.stsci.edu/~mperrin/software/webbpsf/webbpsf-data-0.4.0.tar.gz
+    - http://www.stsci.edu/~mperrin/software/webbpsf/webbpsf-data-0.5.0.tar.gz
