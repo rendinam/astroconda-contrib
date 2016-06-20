@@ -14,13 +14,13 @@ package:
     version: {{ version }}
 requirements:
     build:
-    - pyobjc-core
-    - pyobjc-framework-cocoa
+    - pyobjc-core =={{ version }}
+    - pyobjc-framework-cocoa =={{ version }}
     - setuptools
     - python x.x
     run:
-    - pyobjc-core
-    - pyobjc-framework-cocoa
+    - pyobjc-core =={{ version }}
+    - pyobjc-framework-cocoa =={{ version }}
     - python x.x
 source:
     fn: pyobjc-{{ version }}.tar.gz

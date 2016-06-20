@@ -15,7 +15,7 @@ package:
     version: {{ version }}
 requirements:
     build:
-    - pyobjc-core
+    - pyobjc-core =={{ version }}
     - setuptools
     - python x.x
     run:
