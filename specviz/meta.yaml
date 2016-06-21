@@ -1,6 +1,6 @@
 {% set name = 'specviz' %}
-{% set version = '0.1.2rc3' %}
-{% set tag = 'v0.1.2rc3' %}
+{% set version = '0.2.0rc3' %}
+{% set tag = 'v0.2.0rc3' %}
 {% set number = '0' %}
 
 package:
@@ -17,7 +17,7 @@ requirements:
     - cython
     - jinja2
     - pyyaml
-    - pyqtgraph >=0.9.10
+    - pyqtgraph >=0.9.11
     - pyqt
     - scipy
     - yaml
@@ -30,7 +30,7 @@ requirements:
     - cython
     - jinja2
     - pyyaml
-    - pyqtgraph >=0.9.10
+    - pyqtgraph >=0.9.11
     - pyqt
     - scipy
     - yaml
