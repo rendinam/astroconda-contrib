@@ -3,7 +3,7 @@ about:
     license: BSD
     summary: stsci-data-analysis meta-package
 build:
-    number: '1'
+    number: '2'
 package:
     name: stsci-data-analysis
     version: 1.0.0
