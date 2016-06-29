@@ -4,7 +4,7 @@ about:
     summary: A pure-Python graphics library for PyQt/PySide (git master build)
 
 build:
-    number: '0'
+    number: '1'
 
 package:
     name: pyqtgraph
@@ -26,9 +26,6 @@ source:
     git_url: https://github.com/pyqtgraph/pyqtgraph.git
 
 test:
-  requires:
-    - pyqt
-    - numpy
   imports:
     - pyqtgraph
 
