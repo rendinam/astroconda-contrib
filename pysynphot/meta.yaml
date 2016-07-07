@@ -7,13 +7,13 @@ build:
     preserve_egg_dir: 'yes'
 package:
     name: pysynphot
-    version: 0.9.8.2
+    version: 0.9.8.3
 requirements:
     build:
     - d2to1
     - nose
     - stsci.distutils
-    - astropy >=1.1
+    - astropy >=1.2
     - cython
     - numpy x.x
     - matplotlib
@@ -21,7 +21,7 @@ requirements:
     - python x.x
     run:
     - nose
-    - astropy >=1.1
+    - astropy >=1.2
     - cython
     - numpy x.x
     - matplotlib
