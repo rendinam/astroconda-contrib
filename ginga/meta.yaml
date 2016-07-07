@@ -1,6 +1,6 @@
 {% set name = 'ginga' %}
-{% set version = '2.5.20160627100500' %}
-{% set rev = '25d6608b' %}
+{% set version = '2.5.20160706100500' %}
+{% set rev = '5eca5d9' %}
 {% set number = '0' %}
 about:
     home: https://github.com/ejeschke/{{ name }}
