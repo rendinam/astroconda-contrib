@@ -3,10 +3,10 @@ about:
     license: BSD
     summary: stsci meta-package
 build:
-    number: '1'
+    number: '0'
 package:
     name: stsci
-    version: 1.0.0
+    version: 1.0.1
 requirements:
     build:
     - stsci-hst
