@@ -16,12 +16,12 @@ requirements:
     build:
     - d2to1
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - setuptools
     - python x.x
     run:
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     git_tag: {{ version }}

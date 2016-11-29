@@ -16,12 +16,12 @@ requirements:
     - astropy >=1.1
     - matplotlib
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - astropy >=1.1
     - matplotlib
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     git_tag: {{ version }}

@@ -11,13 +11,13 @@ package:
 requirements:
     build:
     - d2to1
-    - numpy x.x
+    - numpy
     - stsci.distutils
     - stsci.tools
     - setuptools
     - python x.x
     run:
-    - numpy x.x
+    - numpy
     - stsci.tools
     - python x.x
 source:

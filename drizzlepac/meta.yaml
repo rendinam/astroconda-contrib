@@ -16,7 +16,7 @@ requirements:
     - astropy >=1.1
     - fitsblender
     - nictools
-    - numpy x.x
+    - numpy
     - scipy
     - stsci.convolve
     - stsci.distutils
@@ -35,7 +35,7 @@ requirements:
     - astropy >=1.1
     - fitsblender
     - nictools
-    - numpy x.x
+    - numpy
     - scipy
     - stsci.convolve
     - stsci.image

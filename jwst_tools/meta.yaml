@@ -14,12 +14,12 @@ requirements:
     - astropy >=1.1
     - stsci.distutils
     - stsci.tools
-    - numpy x.x
+    - numpy
     - setuptools
     - python x.x
     run:
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - stsci.tools
     - python x.x
 source:

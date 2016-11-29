@@ -10,7 +10,7 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - scipy
     - matplotlib
     - six [py27]
@@ -19,7 +19,7 @@ requirements:
     - python x.x
     run:
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - scipy
     - matplotlib
     - six [py27]

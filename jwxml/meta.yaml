@@ -9,11 +9,11 @@ package:
     version: 0.1.0
 requirements:
     build:
-    - numpy x.x
+    - numpy
     - matplotlib
     - python x.x
     run:
-    - numpy x.x
+    - numpy
     - matplotlib
     - python x.x
 source:

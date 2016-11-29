@@ -13,13 +13,13 @@ requirements:
     - appdirs >=1.4.0
     - six >=1.8.0
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - decorator >=3.2.0
     - appdirs >=1.4.0
     - six >=1.8.0
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     fn: pytools-2016.1.tar.gz

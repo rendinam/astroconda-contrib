@@ -15,13 +15,13 @@ requirements:
     - jwst_lib
     - stsci.convolve
     - stsci.distutils
-    - numpy x.x
+    - numpy
     - setuptools
     - python x.x
     run:
     - astropy >=1.1
     - jwst_lib
-    - numpy x.x
+    - numpy
     - stsci.convolve
     - python x.x
 source:

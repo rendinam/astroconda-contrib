@@ -19,7 +19,7 @@ requirements:
     - pytest
     - six
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - astropy >=1.1
@@ -28,7 +28,7 @@ requirements:
     - pytest
     - six
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     git_tag: {{ version }}

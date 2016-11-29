@@ -14,11 +14,11 @@ requirements:
     - stsci.distutils
     - setuptools
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     git_url: https://github.com/spacetelescope/stsci.ndimage

@@ -14,13 +14,13 @@ requirements:
     - cython
     - matplotlib
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - astropy >=1.1
     - cython
     - matplotlib
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     git_tag: v0.1.1

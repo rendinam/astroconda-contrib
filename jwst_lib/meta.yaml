@@ -16,7 +16,7 @@ requirements:
     - crds
     - asdf
     - stsci.distutils
-    - numpy x.x
+    - numpy
     - setuptools
     - python x.x
     run:
@@ -24,7 +24,7 @@ requirements:
     - astropy >=1.1
     - crds
     - asdf
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git

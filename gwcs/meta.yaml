@@ -12,12 +12,12 @@ requirements:
     - asdf
     - astropy >=1.1
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - asdf
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     git_tag: v0.6rc1

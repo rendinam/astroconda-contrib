@@ -15,11 +15,11 @@ requirements:
     - pytools
     - setuptools
     - stsci.distutils
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - pytools
     - stsci.distutils
     - python x.x

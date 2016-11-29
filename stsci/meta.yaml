@@ -22,7 +22,7 @@ requirements:
     - purge_path >=1.0.0
     - pyds9 >=1.8.1
     - pyfftw >=0.9.2
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - stsci-hst
@@ -38,5 +38,5 @@ requirements:
     - purge_path >=1.0.0
     - pyds9 >=1.8.1
     - pyfftw >=0.9.2
-    - numpy x.x
+    - numpy
     - python x.x

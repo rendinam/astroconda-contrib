@@ -15,14 +15,14 @@ requirements:
     - calcos
     - stsci.tools
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - astropy >=1.1
     - calcos
     - stsci.tools
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     git_tag: 1.2.1

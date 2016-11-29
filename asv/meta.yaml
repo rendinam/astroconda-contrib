@@ -12,12 +12,12 @@ requirements:
     - six
     - sphinx
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - six
     - sphinx
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     git_tag: v0.1.1

@@ -11,7 +11,7 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - scipy
     - matplotlib
     - poppy >=0.5.1
@@ -23,7 +23,7 @@ requirements:
     - jwxml
     run:
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - scipy
     - matplotlib
     - poppy >=0.5.1

@@ -12,7 +12,7 @@ requirements:
     - astropy >=1.1
     - cython
     - matplotlib
-    - numpy x.x
+    - numpy
     - scikit-image
     - scipy
     - setuptools
@@ -21,7 +21,7 @@ requirements:
     - astropy >=1.1
     - cython
     - matplotlib
-    - numpy x.x
+    - numpy
     - scikit-image
     - scipy
     - setuptools

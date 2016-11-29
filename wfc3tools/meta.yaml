@@ -14,7 +14,7 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - setuptools
     - python x.x
     - matplotlib
@@ -22,7 +22,7 @@ requirements:
     - stsci.tools
     run:
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - python x.x
     - stsci.tools
     - matplotlib

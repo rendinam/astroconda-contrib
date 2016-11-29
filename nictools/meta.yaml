@@ -9,7 +9,7 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - scipy
     - stsci.distutils
     - stsci.tools
@@ -17,7 +17,7 @@ requirements:
     - python x.x
     run:
     - astropy >=1.1
-    - numpy x.x
+    - numpy
     - scipy
     - stsci.tools
     - python x.x
