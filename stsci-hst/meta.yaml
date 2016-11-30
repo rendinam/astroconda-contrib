@@ -1,12 +1,19 @@
+{% name = 'stsci-hst' %}
+{% version = '1.0.4' %}
+{% number = '0' %}
+
 about:
-    home: http://www.stsci.edu
+    home: http://ssb.stsci.edu
     license: BSD
     summary: stsci-hst meta-package
+
 build:
-    number: '0'
+    number: {{number}}
+
 package:
-    name: stsci-hst
-    version: 1.0.4
+    name: {{name}}
+    version: {{version}}
+
 requirements:
     build:
     - purge_path >=1.0.0

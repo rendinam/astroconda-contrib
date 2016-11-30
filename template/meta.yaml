@@ -12,16 +12,16 @@ about:
 
 package:
     # Define these values above
-    name: {{ name }}
-    version: {{ version }}
+    name: {{name}}
+    version: {{version}}
 
 build:
     # Define this value above
-    number: {{ number }}
+    number: {{number}}
 
 source:
-    fn: {{ name }}-{{ version }}.tar.gz
-    url: http://example.com/example/{{ name }}-{{ version }}.tar.gz
+    fn: {{name}}-{{version}}.tar.gz
+    url: http://example.com/example/{{name}}-{{version}}.tar.gz
 
 requirements:
     build:
@@ -30,7 +30,7 @@ requirements:
     - python x.x
     run:
     # Dependencies required at RUN-TIME go here
-    # - ...
+    - python x.x
 
 #test:
 #   imports:

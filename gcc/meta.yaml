@@ -1,11 +1,18 @@
+{% set name = 'gcc' %}
+{% set version = '4.6.4' %}
+{% set number = '0' %}
+
 about:
-    home: http://www.netgull.com/gcc/releases/gcc-4.6.4
-    summary: gcc
+    home: http://www.netgull.com/gcc/releases/{{name}}-{{version}}
+    summary: Gnu Compiler Collection
+
 build:
-    number: '0'
+    number: {{number}}
+
 package:
-    name: gcc
-    version: 4.6.4
+    name: {{name}}
+    version: {{version}}
+
 requirements:
     build:
     - gmp >=4.3.2
@@ -17,7 +24,7 @@ requirements:
     - mpfr >=2.3.1
     - mpc >=0.8.1
     - ppl >=0.11,<1
+
 source:
-    fn: gcc-4.6.4.tar.gz
-    url:
-    - http://www.netgull.com/gcc/releases/gcc-4.6.4/gcc-4.6.4.tar.gz
+    fn: {{name}}-{{version}}.tar.gz
+    url: http://www.netgull.com/gcc/releases/{{name}}-{{version}}/{{name}}-{{version}}.tar.gz

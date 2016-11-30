@@ -1,12 +1,20 @@
+{% set name = 'wfpc2tools' %}
+{% set version = '1.0.3' %}
+{% set number = '0' %}
+
 about:
-    home: http://
+    home: https://github.com/spacetelescope/{{name}}
     license: BSD
-    summary: wfpc2tools
+    summary: |
+        Tools for use with WFPC2 (Wide Field and Planetary Camera 2)
+
 build:
-    number: '0'
+    number: {{number}}
+
 package:
-    name: wfpc2tools
-    version: 1.0.3
+    name: {{name}}
+    version: {{version}}
+
 requirements:
     build:
     - d2to1
@@ -25,8 +33,10 @@ requirements:
     - stsci.tools
     - numpy
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/wfpc2tools
+    git_url: https://github.com/spacetelescope/{{name}}.git
+
 test:
     imports:
     - wfpc2tools

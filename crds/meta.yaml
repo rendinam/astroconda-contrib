@@ -5,13 +5,18 @@
 about:
     home: http://www.stsci.edu/hst/observatory/crds/
     license: AURA
-    summary: CRDS assigns calibration references to data using formal rules represented in simple text files
+    summary: |
+        CRDS assigns calibration references to data using formal rules
+        represented in simple text files
+
 build:
-    number: {{ number }}
+    number: {{number}}
     preserve_egg_dir: 'no'
+
 package:
-    name: crds
-    version: {{ version }}
+    name: {{name}}
+    version: {{version}}
+
 requirements:
     build:
     - d2to1
@@ -23,9 +28,11 @@ requirements:
     - astropy >=1.1
     - numpy
     - python x.x
+
 source:
-    git_tag: {{ version }}
-    git_url: https://github.com/spacetelescope/{{ name }}.git
+    git_tag: {{version}}
+    git_url: https://github.com/spacetelescope/{{name}}.git
+
 test:
     imports:
     - crds

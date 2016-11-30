@@ -1,12 +1,19 @@
+{% set name = 'stsci' %}
+{% set version = '1.0.2' %}
+{% set number = '0' %}
+
 about:
-    home: http://stsci.edu
+    home: http://ssb.stsci.edu
     license: BSD
     summary: stsci meta-package
+
 build:
-    number: '0'
+    number: {{number}}
+
 package:
-    name: stsci
-    version: 1.0.2
+    name: {{name}}
+    version: {{version}}
+
 requirements:
     build:
     - stsci-hst

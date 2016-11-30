@@ -4,14 +4,17 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/spacetelescope/{{ name }}
+    home: https://github.com/spacetelescope/{{name}}
     license: BSD
     summary: Ginga products specific to STScI data analysis
+
 build:
-    number: {{ number }}
+    number: {{number}}
+
 package:
-    name: {{ name }}
-    version: {{ version }}
+    name: {{name}}
+    version: {{version}}
+
 requirements:
     build:
     - ginga
@@ -26,9 +29,11 @@ requirements:
     - numpy
     - scipy
     - python x.x
+
 source:
-    git_tag: {{ tag }}
-    git_url: https://github.com/spacetelescope/{{ name }}.git
+    git_tag: {{tag}}
+    git_url: https://github.com/spacetelescope/{{name}}.git
+
 test:
     imports:
     - stginga

@@ -1,13 +1,21 @@
+{% set name = 'stsci.image' %}
+{% set version = '2.2.0' %}
+{% set number = '0' %}
+
 about:
-    home: https://github.com/embray/stsci.image
+    home: https://github.com/spacetelescope/{{name}}
     license: GPL
-    summary: stsci.image
+    summary: |
+        Image array manipulation functions
+
 build:
-    number: '0'
+    number: {{number}}
     preserve_egg_dir: 'yes'
+
 package:
-    name: stsci.image
-    version: 2.2.0
+    name: {{name}}
+    version: {{version}}
+
 requirements:
     build:
     - d2to1
@@ -24,8 +32,11 @@ requirements:
     - scipy
     - stsci.tools
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/stsci.image.git
+    git_tag: {{version}}
+    git_url: https://github.com/spacetelescope/{{name}}.git
+
 test:
     imports:
     - stsci.image

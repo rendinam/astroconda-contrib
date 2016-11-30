@@ -8,23 +8,26 @@ about:
     summary: Wrappers for the Cocoa frameworks on Mac OS X
 
 build:
-    number: {{ number }}
+    number: {{number}}
     preserve_egg_dir: 'true'
+
 package:
-    name: {{ name }}
-    version: {{ version }}
+    name: {{name}}
+    version: {{version}}
+
 requirements:
     build:
-    - pyobjc-core =={{ version }}
+    - pyobjc-core =={{version}}
     - setuptools
     - python x.x
     run:
     - pyobjc-core
     - python x.x
+
 source:
-    fn: pyobjc-{{ version }}.tar.gz
-    url:
-    - https://bitbucket.org/ronaldoussoren/pyobjc/get/pyobjc-{{ version }}.tar.bz2
+    fn: pyobjc-{{version}}.tar.gz
+    url: https://bitbucket.org/ronaldoussoren/pyobjc/get/pyobjc-{{version}}.tar.bz2
+
 test:
     imports:
     - Cocoa

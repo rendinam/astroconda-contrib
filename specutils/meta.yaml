@@ -9,16 +9,15 @@ about:
     summary: One-dimensional spectral operations
 
 package:
-    name: {{ name }}
-    version: {{ version }}
+    name: {{name}}
+    version: {{version}}
 
 build:
-    # Define this value above
-    number: {{ number }}
+    number: {{number}}
 
 source:
-    git_tag: {{ tag }}
-    git_url: https://github.com/astropy/{{ name }}.git
+    git_tag: {{tag}}
+    git_url: https://github.com/astropy/{{name}}.git
 
 requirements:
     build:

@@ -1,12 +1,20 @@
+{% set name = 'stsci.distutils' %}
+{% set version = '0.3.8' %}
+{% set number = '0' %}
+
 about:
-    home: https://github.com/embray/stsci.distutils
+    home: https://github.com/spacetelescope/stsci.distutils
     license: GPL
-    summary: stsci.distutils
+    summary: |
+        distutils/packaging-related utilities used by some of STScI's packages
+
 build:
-    number: '0'
+    number: {{number}}
+
 package:
-    name: stsci.distutils
-    version: 0.3.8
+    name: {{name}}
+    version: {{version}}
+
 requirements:
     build:
     - d2to1
@@ -17,8 +25,10 @@ requirements:
     - nose
     - numpy
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/stsci.distutils
+    git_url: https://github.com/spacetelescope/{{name}}.git
+
 test:
     imports:
     - stsci.distutils
