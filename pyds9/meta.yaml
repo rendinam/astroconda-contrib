@@ -4,7 +4,7 @@
 
 about:
     home: https://github.com/ericmandel/{{ name }}
-    license: GPL
+    license: BSD
     summary: |
         (Supervised master build)
         Python connection to SAOimage DS9 via XPA

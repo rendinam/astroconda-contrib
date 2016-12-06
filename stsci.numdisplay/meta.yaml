@@ -4,7 +4,7 @@
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
-    license: GPL
+    license: BSD
     summary: |
         Package for displaying numpy arrays in DS9
 

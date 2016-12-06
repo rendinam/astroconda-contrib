@@ -4,7 +4,7 @@
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
-    license: GPL
+    license: BSD
     summary: |
         Various functions for multi-dimensional image processing
         --fork of scipy.ndimage

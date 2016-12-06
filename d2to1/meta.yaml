@@ -4,9 +4,9 @@
 
 about:
     home: https://github.com/embray/{{ name }}
-    license: GPL
+    license: BSD
     summary: |
-        Allows using distutils2-like setup.cfg files for a package's metadata
+        Allows using distutils2-like setup.cfg files for package metadata
         with a distribute/setuptools setup.py
 
 build:

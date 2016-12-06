@@ -4,7 +4,7 @@
 
 about:
     home: https://github.com/spacetelescope/stsci.tools
-    license: GPL
+    license: BSD
     summary: |
         Collection of tools specific to STScI packages
 

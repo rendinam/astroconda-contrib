@@ -4,7 +4,7 @@
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
-    license: GPL
+    license: BSD
     summary: A set of tools and templates to customize Sphinx for use in STScI projects
 
 build:

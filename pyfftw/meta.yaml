@@ -4,7 +4,7 @@
 
 about:
     home: http://hgomersall.github.com/pyFFTW
-    license: GPL
+    license: BSD
     summary: |
         A pythonic wrapper around FFTW, the FFT library, presenting a unified
         interface for all the supported transforms

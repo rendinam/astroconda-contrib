@@ -5,7 +5,7 @@
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
-    license: GPL
+    license: BSD
     summary: Generalized World Coordinate System
 
 build:

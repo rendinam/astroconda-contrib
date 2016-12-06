@@ -4,7 +4,7 @@
 
 about:
     home: http://www.stsci.edu/institute/software_hardware
-    license: GPL
+    license: BSD
 
 build:
     number: {{ number }}
