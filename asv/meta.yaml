@@ -4,17 +4,17 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/spacetelescope/{{name}}
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: |
         A simple Python history benchmarking tool
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -30,5 +30,5 @@ requirements:
     - python x.x
 
 source:
-    git_tag: {{tag}}
-    git_url: https://github.com/spacetelescope/{{name}}.git
+    git_tag: {{ tag }}
+    git_url: https://github.com/spacetelescope/{{ name }}.git

@@ -3,16 +3,16 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/spacetelescope/{{name}}
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: For analyzing and calibrating HST-WFC3 data
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -32,8 +32,8 @@ requirements:
     - scipy
 
 source:
-    git_tag: {{version}}
-    git_url: https://github.com/spacetelescope/{{name}}.git
+    git_tag: {{ version }}
+    git_url: https://github.com/spacetelescope/{{ name }}.git
 
 test:
     imports:

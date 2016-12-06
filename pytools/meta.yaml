@@ -3,16 +3,16 @@
 {% set number = '1' %}
 
 about:
-    home: https://pypi.python.org/{{name}}
+    home: https://pypi.python.org/{{ name }}
     license: MIT
     summary: A collection of tools for Python
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -30,10 +30,10 @@ requirements:
     - python x.x
 
 source:
-    fn: {{name}}-{{version}}.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
     md5: d8af5c5bea24aa4a21881684dcf03b06
     url:
-    - https://pypi.python.org/packages/source/p/{{name}}/{{name}}-{{version}}.tar.gz
+    - https://pypi.python.org/packages/source/p/{{ name }}/{{ name }}-{{ version }}.tar.gz
 
 test:
     imports:

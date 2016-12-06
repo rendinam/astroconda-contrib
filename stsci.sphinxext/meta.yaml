@@ -3,17 +3,17 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/spacetelescope/{{name}}
+    home: https://github.com/spacetelescope/{{ name }}
     license: GPL
     summary: A set of tools and templates to customize Sphinx for use in STScI projects
 
 build:
-    number: {{number}}
+    number: {{ number }}
     preserve_egg_dir: 'yes'
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -28,7 +28,7 @@ requirements:
     - python x.x
 
 source:
-    git_url: https://github.com/spacetelescope/{{name}}.git
+    git_url: https://github.com/spacetelescope/{{ name }}.git
 
 test:
     imports:

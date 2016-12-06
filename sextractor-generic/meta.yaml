@@ -8,11 +8,11 @@ about:
     summary: Generic (unoptimized) Source Extractor
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -24,5 +24,5 @@ requirements:
     - atlas-generic [osx]
 
 source:
-    fn: {{name}}-{{version}}.tar.gz
-    url: http://www.astromatic.net/download/{{name}}/{{name}}-{{version}}.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
+    url: http://www.astromatic.net/download/{{ name }}/{{ name }}-{{ version }}.tar.gz

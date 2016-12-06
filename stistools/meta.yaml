@@ -3,16 +3,16 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/spacetelescope/{{name}}
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: Tools for STIS (Space Telescope Imaging Spectrograph)
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -32,7 +32,7 @@ requirements:
     - python x.x
 
 source:
-    git_url: https://github.com/spacetelescope/{{name}}.git
+    git_url: https://github.com/spacetelescope/{{ name }}.git
 
 test:
     imports:

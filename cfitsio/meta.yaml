@@ -11,12 +11,12 @@ about:
             data format
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 source:
-    fn: {{name}}{{version_short}}.tar.gz
-    url: ftp://heasarc.gsfc.nasa.gov/software/fitsio/c/{{name}}{{version_short}}.tar.gz
+    fn: {{ name }}{{ version_short }}.tar.gz
+    url: ftp://heasarc.gsfc.nasa.gov/software/fitsio/c/{{ name }}{{ version_short }}.tar.gz

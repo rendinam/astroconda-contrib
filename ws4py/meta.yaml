@@ -3,16 +3,16 @@
 {% number = '0' %}
 
 about:
-    home: https://pypi.python.org/packages/source/w/{{name}}
+    home: https://pypi.python.org/packages/source/w/{{ name }}
     license: BSD
     summary: WebSocket client and server library for Python 2 and 3 as well as PyPy
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -22,9 +22,9 @@ requirements:
     - python x.x
 
 source:
-    fn: {{name}}-{{version}}.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
     md5: 6b47e33cbd13f5c134b04f2a44a480ad
-    url: https://pypi.python.org/packages/source/w/{{name}}/{{name}}-{{version}}.tar.gz
+    url: https://pypi.python.org/packages/source/w/{{ name }}/{{ name }}-{{ version }}.tar.gz
 
 test:
     imports:

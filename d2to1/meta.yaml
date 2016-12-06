@@ -3,18 +3,18 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/embray/{{name}}
+    home: https://github.com/embray/{{ name }}
     license: GPL
     summary: |
         Allows using distutils2-like setup.cfg files for a package's metadata
         with a distribute/setuptools setup.py
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -25,5 +25,5 @@ requirements:
     - python x.x
 
 source:
-    git_tag: {{version}}
-    git_url: https://github.com/embray/{{name}}.git
+    git_tag: {{ version }}
+    git_url: https://github.com/embray/{{ name }}.git

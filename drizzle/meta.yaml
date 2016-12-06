@@ -4,20 +4,20 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/spacetelescope/{{name}}
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: A package for combining dithered images into a single image
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 source:
-    git_tag: {{tag}}
-    git_url: https://github.com/spacetelescope/{{name}}.git
+    git_tag: {{ tag }}
+    git_url: https://github.com/spacetelescope/{{ name }}.git
 
 requirements:
     build:

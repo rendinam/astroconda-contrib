@@ -3,16 +3,16 @@
 {% set number = '0' %}
 
 about:
-    home: https://pypi.python.org/packages/source/t/{{name}}
+    home: https://pypi.python.org/packages/source/t/{{ name }}
     license: BSD
     summary: Backports of the traceback module
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -28,9 +28,9 @@ requirements:
     - python x.x
 
 source:
-    fn: {{name}}-{{version}}.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
     md5: 9e9723f4d70bfc6308fa992dd193c400
-    url: https://pypi.python.org/packages/source/t/{{name}}/{{name}}-{{version}}.tar.gz
+    url: https://pypi.python.org/packages/source/t/{{ name }}/{{ name }}-{{ version }}.tar.gz
 
 test:
     imports:

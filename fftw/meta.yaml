@@ -9,11 +9,11 @@ about:
         A fast, free C FFT library; includes real-complex, multidimensional, and parallel transforms
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -22,5 +22,5 @@ requirements:
     - pkgconfig
 
 source:
-    fn: {{name}}-{{version}}.tar.gz
-    url: http://www.fftw.org/{{name}}-{{version}}.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
+    url: http://www.fftw.org/{{ name }}-{{ version }}.tar.gz

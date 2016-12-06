@@ -3,16 +3,16 @@
 {% set number = '0' %}
 
 about:
-    home: https://pypi.python.org/packages/source/y/{{name}}
+    home: https://pypi.python.org/packages/source/y/{{ name }}
     license: BSD
     summary: Command-line tool for querying PyPI and Python packages installed on your system
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -22,9 +22,9 @@ requirements:
     - python x.x
 
 source:
-    fn: {{name}}-{{version}}.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
     md5: 10dfabca7a020058436aec9dbad70123
-    url: https://pypi.python.org/packages/source/y/{{name}}/{{name}}-{{version}}.tar.gz
+    url: https://pypi.python.org/packages/source/y/{{ name }}/{{ name }}-{{ version }}.tar.gz
 
 test:
     commands:

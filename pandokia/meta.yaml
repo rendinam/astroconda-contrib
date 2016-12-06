@@ -3,16 +3,16 @@
 {% set number = '1' %}
 
 about:
-    home: http://ssb.stsci.edu/testing/{{name}}
+    home: http://ssb.stsci.edu/testing/{{ name }}
     license: BSD
     summary: A test running/reporting facility
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -28,7 +28,7 @@ requirements:
     - python x.x
 
 source:
-    git_url: https://github.com/spacetelescope/{{name}}.git
+    git_url: https://github.com/spacetelescope/{{ name }}.git
 
 test:
     commands:

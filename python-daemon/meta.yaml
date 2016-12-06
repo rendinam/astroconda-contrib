@@ -3,16 +3,16 @@
 {% set number = '0' %}
 
 about:
-    home: https://pagure.io/{{name}}
+    home: https://pagure.io/{{ name }}
     license: Apache-2
     summary: Library to implement a well-behaved Unix daemon process.
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -24,6 +24,6 @@ requirements:
     - python x.x
 
 source:
-    fn: {{name}}-{{version}}.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
     md5: 73e7f49f525c51fa4a995aea4d80de41
-    url: https://pypi.python.org/packages/source/p/{{name}}/{{name}}-{{version}}.tar.gz
+    url: https://pypi.python.org/packages/source/p/{{ name }}/{{ name }}-{{ version }}.tar.gz

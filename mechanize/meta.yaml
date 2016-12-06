@@ -3,16 +3,16 @@
 {% set number = '0' %}
 
 about:
-    home: https://pypi.python.org/packages/source/m/{{name}}
+    home: https://pypi.python.org/packages/source/m/{{ name }}
     license: BSD
     summary: Stateful programmatic web browsing
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -22,10 +22,10 @@ requirements:
     - python x.x
 
 source:
-    fn: {{name}}-{{version}}.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
     md5: 32657f139fc2fb75bcf193b63b8c60b2
     url:
-    - https://pypi.python.org/packages/source/m/{{name}}/{{name}}-{{version}}.tar.gz
+    - https://pypi.python.org/packages/source/m/{{ name }}/{{ name }}-{{ version }}.tar.gz
 
 test:
     imports:

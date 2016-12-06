@@ -10,14 +10,14 @@ about:
 build:
     binary_relocation: False [osx]
     detect_binary_files_with_prefix: False [osx]
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 source:
-    fn: {{name}}.tar.gz
+    fn: {{ name }}.tar.gz
     url:
-    - http://ssb.stsci.edu/stripped/linux/{{name}}.tar.gz [linux]
-    - http://ssb.stsci.edu/stripped/osx/{{iraf}}.tar.gz   [osx]
+    - http://ssb.stsci.edu/stripped/linux/{{ name }}.tar.gz [linux]
+    - http://ssb.stsci.edu/stripped/osx/{{ name }}.tar.gz   [osx]

@@ -3,17 +3,17 @@
 {% set number = '0' %}
 
 about:
-    home: http://www.stsci.edu/~mperrin/software/{{name}}
+    home: http://www.stsci.edu/~mperrin/software/{{ name }}
     license: BSD
     summary: webbpsf data files
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 source:
-    fn: {{name}}-{{version}}.tar.gz
-    url: http://www.stsci.edu/~mperrin/software/{{name}}/{{name}}-{{version}}.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
+    url: http://www.stsci.edu/~mperrin/software/{{ name }}/{{ name }}-{{ version }}.tar.gz

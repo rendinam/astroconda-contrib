@@ -3,17 +3,17 @@
 {% set number = '0' %}
 
 about:
-    home: https://pypi.python.org/packages/source/s/{{name}}
+    home: https://pypi.python.org/packages/source/s/{{ name }}
     license: BSD
     summary: |
         Sphinx extension to include program output
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -25,6 +25,6 @@ requirements:
     - python x.x
 
 source:
-    fn: {{name}}-{{version}}.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
     md5: bb0be17ef13f268378b2af51ff413c58
-    url: https://pypi.python.org/packages/source/s/{{name}}/{{name}}-{{version}}.tar.gz
+    url: https://pypi.python.org/packages/source/s/{{ name }}/{{ name }}-{{ version }}.tar.gz

@@ -12,16 +12,16 @@ about:
         value problems
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
     - cmake
 
 source:
-    fn: {{name}}-{{version}}.tgz
-    url: http://www.netlib.org/{{name}}/{{name}}-{{version}}.tgz
+    fn: {{ name }}-{{ version }}.tgz
+    url: http://www.netlib.org/{{ name }}/{{ name }}-{{ version }}.tgz

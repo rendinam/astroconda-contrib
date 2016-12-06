@@ -3,7 +3,7 @@
 {% set number = '0' %}
 
 about:
-    home: http://sourceforge.net/projects/{{version}}
+    home: http://sourceforge.net/projects/{{ version }}
     license: LGPL
     summary: |
         shUnit2 is a xUnit unit test framework for Bourne based shell
@@ -11,15 +11,15 @@ about:
         PyUnit, etc
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 source:
-    fn: {{name}}-{{version}}.tgz
-    url: https://downloads.sourceforge.net/{{name}}/{{name}}-{{version}}.tgz
+    fn: {{ name }}-{{ version }}.tgz
+    url: https://downloads.sourceforge.net/{{ name }}/{{ name }}-{{ version }}.tgz
 
 test:
     commands:

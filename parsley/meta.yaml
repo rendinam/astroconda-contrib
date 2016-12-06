@@ -8,11 +8,11 @@ about:
     summary: parsley
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:
@@ -22,9 +22,9 @@ requirements:
     - python x.x
 
 source:
-    fn: Parsley-{{version}}.tar.gz
+    fn: Parsley-{{ version }}.tar.gz
     md5: 92bc256e5f73810a609dc7874637ad31
-    url: https://pypi.python.org/packages/source/P/Parsley/Parsley-{{version}}.tar.gz
+    url: https://pypi.python.org/packages/source/P/Parsley/Parsley-{{ version }}.tar.gz
 
 test:
     imports:

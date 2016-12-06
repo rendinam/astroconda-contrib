@@ -3,16 +3,16 @@
 {% set number = '0' %}
 
 package:
-  name: {{name}}
-  version: {{version}}
+  name: {{ name }}
+  version: {{ version }}
 
 source:
-  fn: {{name}}-{{version}}.tar.gz
-  url: https://pypi.io/packages/source/q/{{name}}/QtPy-{{version}}.tar.gz
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/q/{{ name }}/QtPy-{{ version }}.tar.gz
   md5: 181a1cc9c010e0c1f4daa3f0f69e3782
 
 build:
-  number: {{number}}
+  number: {{ number }}
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
