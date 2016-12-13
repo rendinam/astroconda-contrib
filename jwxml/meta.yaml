@@ -1,7 +1,7 @@
 {% name = 'jwxml' %}
 {% version = '0.1.0' %}
 {% tag = 'v' + version %}
-{% number = '0' %}
+{% number = '1' %}
 
 about:
     home: https://github.com/mperrin/{{ name }}

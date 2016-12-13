@@ -1,7 +1,7 @@
 {% set name = 'specviz' %}
 {% set version = '0.2.2rc5' %}
 {% set tag = 'v0.2.2rc5' %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 package:
   name: {{ name }}
