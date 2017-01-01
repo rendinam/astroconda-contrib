@@ -14,14 +14,14 @@ package:
     version: {{ version }}
 requirements:
     build:
-    - ginga >= 2.6.1
+    - ginga >=2.6.1
     - astropy >=1.2
     - numpy x.x
     - scipy
     - setuptools
     - python x.x
     run:
-    - ginga >= 2.6.1
+    - ginga >=2.6.1
     - astropy >=1.2
     - numpy x.x
     - scipy
