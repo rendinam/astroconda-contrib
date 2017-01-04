@@ -1,6 +1,7 @@
 {% set name = 'pyds9' %}
 {% set version = '1.9.0.dev' %}
 {% set number = '1' %}
+{% set buildstr = GIT_BUILD_STR + '_py' + CONDA_PY + '_' + PKG_BUILDNUM %}
 
 about:
     home: https://github.com/ericmandel/{{ name }}
@@ -11,7 +12,7 @@ about:
 
 build:
     number: {{ number }}
-    string: {{ GIT_BUILD_STR }}
+    string: {{ buildstr }}
 
 package:
     name: {{ name }}
