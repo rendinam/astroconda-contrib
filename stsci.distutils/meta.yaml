@@ -3,10 +3,10 @@
 {% set number = '1' %}
 
 about:
-    home: https://github.com/spacetelescope/stsci.distutils
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: |
-        distutils/packaging-related utilities used by some of STScI's packages
+        distutils/packaging-related utilities used by older STScI packages
 
 build:
     number: {{ number }}
