@@ -12,14 +12,9 @@ build:
     number: {{ number }}
 
 package:
-<<<<<<< HEAD
     name: {{ name }}
     version: {{ version }}
 
-=======
-    name: gwcs
-    version: 0.7
->>>>>>> a96a1285ba6cc7b077ba62e2a73d4592dd78003f
 requirements:
     build:
     - asdf
@@ -34,14 +29,9 @@ requirements:
     - python x.x
 
 source:
-<<<<<<< HEAD
     git_tag: {{ tag }}
     git_url: https://github.com/spacetelescope/{{ name }}.git
 
-=======
-    git_tag: 0.7
-    git_url: https://github.com/spacetelescope/gwcs
->>>>>>> a96a1285ba6cc7b077ba62e2a73d4592dd78003f
 test:
     imports:
     - gwcs
