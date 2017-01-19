@@ -1,6 +1,6 @@
 {% set name = 'xpa' %}
-{% set version = '2.1.17' %}
-{% set tag = 'v' + version %}
+{% set version = '2.1.18' %}
+{% set tag = 'v'+version %}
 {% set number = '0' %}
 
 about:
@@ -25,3 +25,4 @@ test:
     - test -x `which xpaset`
     - test -x `which xpainfo`
     - test -x `which xpaaccess`
+    - test -x `which xpans`
