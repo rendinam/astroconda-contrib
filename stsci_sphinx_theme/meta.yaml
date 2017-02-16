@@ -17,9 +17,12 @@ source:
 requirements:
   build:
     - sphinx >=1.1
+    - setuptools
+    - python x.x
 
   run:
     - sphinx >=1.1
+    - python x.x
 
 test:
   requires:
