@@ -27,6 +27,7 @@ requirements:
   run:
     - glue-core >=0.10.1
     - glue-vispy-viewers >=0.7.2
+    - glue-ginga
 
 test:
   imports:
