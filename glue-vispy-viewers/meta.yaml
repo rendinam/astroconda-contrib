@@ -16,10 +16,12 @@ build:
   preserve_egg_dir: True
 
 requirements:
-
   build:
     - python
     - setuptools
+    - numpy
+    - pyopengl
+    - glue-core >=0.10
 
   run:
     - python
