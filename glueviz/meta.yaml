@@ -10,33 +10,18 @@ package:
   name: {{ name }}
   version: {{ version }}
 
-source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/g/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  md5: abcb117e102ae9cb00c5dd1bd784c5f3
-
 build:
   number: {{ number }}
 
 requirements:
-
   build:
     - python
     - setuptools
+    - glue-vispy-viewers >=0.7.2
 
   run:
-    - glue-core >=0.10.1
     - glue-vispy-viewers >=0.7.2
     - glue-ginga
-
-test:
-  imports:
-    - glue
-    - glue.core
-    - glue.app.qt
-  commands:
-    - glue --version
-    - glue-deps list
 
 app:
   entry: glue
@@ -47,5 +32,4 @@ app:
 about:
   home: http://glueviz.org
   license: BSD 3-Clause
-  #license_file: LICENSE
   summary: Multi-dimensional linked data exploration
