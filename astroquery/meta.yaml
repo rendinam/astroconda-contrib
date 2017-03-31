@@ -1,9 +1,10 @@
 {% set name = 'astroquery' %}
-{% set version = '0.3.3' %}
+{% set version = '0.3.5' %}
+{% set tag = 'v' + version %}
 {% set number = '0' %}
 
 about:
-    home: https://github.com/spacetelescope/{{ name }}
+    home: https://github.com/astropy/{{ name }}
     license: BSD
     summary: Astroquery is a set of tools for querying astronomical web forms and databases.
 
@@ -12,9 +13,8 @@ package:
     version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/a/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  md5: 1be83c630fcb462a711eb9c2eda0fbea
+    git_url: https://github.com/astropy/{{ name }}
+    git_tag: {{ tag }}
 
 build:
     number: {{ number }}
@@ -28,6 +28,7 @@ requirements:
     - html5lib
     - setuptools
     - python x.x
+    
     run:
     - astropy
     - requests
