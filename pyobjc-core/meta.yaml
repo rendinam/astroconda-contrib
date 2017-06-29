@@ -8,6 +8,7 @@ about:
     summary: Python<->ObjC Interoperability Module
 
 build:
+    skip: False [osx]
     number: {{ number }}
     preserve_egg_dir: 'true'
 
