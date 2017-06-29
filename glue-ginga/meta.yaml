@@ -17,6 +17,7 @@ package:
 
 requirements:
     build:
+    - scipy
     - astropy >=1.2
     - glueviz >=0.10
     - ginga >=2.6.1
@@ -24,6 +25,7 @@ requirements:
     - numpy
     - python x.x
     run:
+    - scipy
     - astropy >=1.2
     - glueviz >=0.10
     - ginga >=2.6.1
