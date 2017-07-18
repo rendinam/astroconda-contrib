@@ -1,11 +1,11 @@
 {% set name = 'acstools' %}
-{% set version = '2.0.8' %}
+{% set version = '2.0.9' %}
 {% set number = '0' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
     license: BSD
-    summary: For analyzing ACS data
+    summary: Python tools for analyzing ACS data
 build:
     number: {{ number }}
 package:
