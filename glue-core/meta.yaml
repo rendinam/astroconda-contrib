@@ -1,5 +1,5 @@
 {% set name = 'glue-core' %}
-{% set version = '0.10.1' %}
+{% set version = '0.11.1' %}
 {% set number = '0' %}
 
 package:
@@ -9,7 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  md5: bf0d8d2c2fba069d554aadb9acce5292
+  sha256: 9a1085ec093e35cc724da4ebff0092558489e089dd128d222ff81c9115f91bb1
 
 build:
   number: {{ number }}

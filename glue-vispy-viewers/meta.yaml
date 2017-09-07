@@ -1,5 +1,5 @@
 {% set name = 'glue-vispy-viewers' %}
-{% set version = "0.7.2" %}
+{% set version = "0.8" %}
 {% set number = '0' %}
 
 package:
@@ -9,10 +9,11 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/glue-vispy-viewers/{{ name }}-{{ version }}.tar.gz
-  md5: 58cd60967ed1b80b965b0627b2d3bd77
+  md5: 86134446dc50b5060f0ae8563e0fe677
 
 build:
   number: {{ number }}
+  script: python setup.py install --single-version-externally-managed --record record.txt
   preserve_egg_dir: True
 
 requirements:
@@ -21,13 +22,13 @@ requirements:
     - setuptools
     - numpy
     - pyopengl
-    - glue-core >=0.10
+    - glue-core >=0.11
 
   run:
     - python
     - numpy
     - pyopengl
-    - glue-core >=0.10
+    - glue-core >=0.11
     - matplotlib
     - qtpy
     - pyqt
