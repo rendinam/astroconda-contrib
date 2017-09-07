@@ -3,7 +3,7 @@
 # app: entry here and not in the glue-core package.
 
 {% set name = 'glueviz' %}
-{% set version = '0.11.0' %}
+{% set version = '0.11.1' %}
 {% set number = '0' %}
 
 package:
@@ -13,7 +13,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  md5: 03954cd633bd7be25472d529034cb8fb
+  sha256: 3d5c3ea90d78d3186ff60ff8094e3c0b09c6e040d94210d29a8370a60aa134d5
 
 build:
   number: {{ number }}
@@ -23,12 +23,12 @@ requirements:
   build:
     - python
     - setuptools
-    - glue-core >=0.11.0
+    - glue-core >=0.11.1
     - glue-vispy-viewers >=0.8
     - glue-ginga
 
   run:
-    - glue-core >=0.11.0
+    - glue-core >=0.11.1
     - glue-vispy-viewers >=0.8
     - glue-ginga
 
