@@ -4,7 +4,7 @@
 
 {% set name = 'glueviz' %}
 {% set version = '0.11.1' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 package:
   name: {{ name }}
@@ -20,13 +20,6 @@ build:
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-  build:
-    - python
-    - setuptools
-    - glue-core >=0.11.1
-    - glue-vispy-viewers >=0.8
-    - glue-ginga
-
   run:
     - glue-core >=0.11.1
     - glue-vispy-viewers >=0.8
