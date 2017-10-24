@@ -1,1 +1,1 @@
-python setup.py install --offline --no-git
+$PYTHON setup.py install
