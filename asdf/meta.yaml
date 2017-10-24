@@ -1,5 +1,5 @@
 {% set name = 'asdf' %}
-{% set version = '1.2.1' %}
+{% set version = '1.3.0' %}
 {% set number = '1' %}
 
 about:
@@ -16,7 +16,8 @@ package:
 
 requirements:
     build:
-    - astropy >=1.1
+    - semantic_version >=2.6
+    - astropy >=1.3
     - pyyaml
     - jsonschema
     - pytest
@@ -25,7 +26,8 @@ requirements:
     - numpy
     - python x.x
     run:
-    - astropy >=1.1
+    - semantic_version >=2.6
+    - astropy >=1.3
     - pyyaml
     - jsonschema
     - pytest
