@@ -1,6 +1,6 @@
 {% set name = 'ginga' %}
-{% set version = '2.6.5' %}
-{% set tag = 'v2.6.5' %}
+{% set version = '2.6.6' %}
+{% set tag = 'v2.6.6' %}
 {% set number = '0' %}
 
 about:
