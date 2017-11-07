@@ -1,5 +1,9 @@
+# NOTE: this is a meta-package that includes the core glue code as well as stable
+# plugins. This is the main conda package we want in the Navigator, so we add the
+# app: entry here and not in the glue-core package.
+
 {% set name = 'glueviz' %}
-{% set version = '0.9.1' %}
+{% set version = '0.12.0' %}
 {% set number = '0' %}
 
 package:
@@ -9,55 +13,17 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  md5: 365887017580e243fb008d8109f2bc16
+  sha256: 4b41b9bb41d88567e9fef76af545059ba9bb6c3a3645a07619fa5b1b47adbc5e
 
 build:
   number: {{ number }}
   script: python setup.py install --single-version-externally-managed --record record.txt
-  osx_is_app: True
 
 requirements:
-
-  build:
-    - python
-    - setuptools
-
   run:
-
-    # The following is needed to make sure that the package works as a GUI
-    # application (glue needs to be run with python.app, not python)
-    - python.app  # [osx]
-
-    # Required dependencies
-    - python
-    - numpy >=1.9
-    - pandas >=0.14
-    - astropy >=1
-    - matplotlib >=1.4
-    - qtpy >=1.1.1
-    - setuptools >=1.0
-    - pyqt
-
-    # Optional dependencies (defined in ``extras_require``)
-    - dill
-    - h5py
-    - scipy
-    - scikit-image
-    - ipython >=1
-    - ipykernel
-    - qtconsole
-    - plotly
-    - xlrd
-    - glue-vispy-viewers >=0.5
-
-test:
-  imports:
-    - glue
-    - glue.core
-    - glue.app.qt
-  commands:
-    - glue --version
-    - glue-deps list
+    - glue-core >=0.12
+    - glue-vispy-viewers >=0.9
+    - glue-ginga
 
 app:
   entry: glue
@@ -68,9 +34,4 @@ app:
 about:
   home: http://glueviz.org
   license: BSD 3-Clause
-  license_file: LICENSE
   summary: Multi-dimensional linked data exploration
-
-extra:
-  recipe-maintainers:
-    - astrofrog

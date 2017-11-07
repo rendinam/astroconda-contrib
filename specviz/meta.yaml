@@ -1,6 +1,6 @@
 {% set name = 'specviz' %}
-{% set version = '0.2.3' %}
-{% set tag = 'v0.2.3' %}
+{% set version = '0.4.2' %}
+{% set tag = 'v' + version %}
 {% set number = '0' %}
 
 package:
@@ -18,7 +18,9 @@ requirements:
   build:
     - astropy
     - cython
+    - docopt
     - specutils
+    - py-expression-eval
     - pyyaml
     - pyqtgraph >=0.9.11
     - pyqt
@@ -33,7 +35,9 @@ requirements:
   run:
     - astropy
     - cython
+    - docopt
     - specutils
+    - py-expression-eval
     - pyyaml
     - pyqtgraph >=0.9.11
     - pyqt
@@ -54,3 +58,4 @@ test:
 about:
   home: https://github.com/spacetelescope/specviz
   license: BSD
+  summary: An interactive astronomical 1D spectra analysis tool
