@@ -1,6 +1,5 @@
 {% set name = 'imexam' %}
 {% set version = '0.8.0' %}
-{% set tag = 'v' + version %}
 {% set number = '0' %}
 
 about:
@@ -41,7 +40,7 @@ requirements:
     - python x.x
 
 source:
-    git_tag: {{ tag }}
+    git_tag: {{ version }}
     git_url: https://github.com/spacetelescope/{{ name }}.git
 
 test:
