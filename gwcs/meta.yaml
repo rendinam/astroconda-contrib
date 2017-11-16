@@ -1,5 +1,5 @@
 {% set name = 'gwcs' %}
-{% set version = '0.7' %}
+{% set version = '0.8.0' %}
 {% set number = '0' %}
 
 about:
@@ -17,13 +17,13 @@ package:
 requirements:
     build:
     - asdf
-    - astropy >=1.1
+    - astropy >=2.0
     - setuptools
     - numpy
     - python x.x
     run:
     - asdf
-    - astropy >=1.1
+    - astropy >=2.0
     - numpy
     - python x.x
 
