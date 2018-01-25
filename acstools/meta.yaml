@@ -1,6 +1,6 @@
 {% set name = 'acstools' %}
 {% set version = '2.0.9' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -20,7 +20,9 @@ requirements:
     - python x.x
     run:
     - astropy >=1.1
+    - scikit-image
     - stsci.tools
+    - matplotlib
     - numpy
     - python x.x
 source:
