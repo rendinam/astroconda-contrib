@@ -1,7 +1,10 @@
 {% set name = 'astroquery' %}
 {% set version = '0.3.7' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
 {% set tag = 'v' + version %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/astropy/{{ name }}
@@ -28,7 +31,7 @@ requirements:
     - html5lib
     - secretstorage [linux]
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - astropy

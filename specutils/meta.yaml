@@ -1,7 +1,10 @@
 {% set name = 'specutils' %}
 {% set version = '0.2.2' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
 {% set tag = 'v' + version %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: https://github.com/astropy/specutils
@@ -25,13 +28,13 @@ requirements:
     - cython
     - scipy
     - setuptools
-    - numpy
-    - python x.x
+    - numpy {{ numpy }}
+    - python {{ python }}
     run:
     - astropy
     - scipy
     - numpy
-    - python x.x
+    - python
 
 test:
     imports:

@@ -1,7 +1,10 @@
 {% set name = 'ccfits' %}
 {% set badname = 'CCfits' %}
 {% set version = '2.5' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home:

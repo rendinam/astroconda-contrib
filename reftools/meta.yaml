@@ -1,6 +1,9 @@
 {% set name = 'reftools' %}
 {% set version = '1.7.4' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -17,13 +20,13 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - numpy
-    - python x.x
+    - numpy {{ numpy }}
+    - python {{ python }}
     - setuptools
     run:
     - astropy >=1.1
     - numpy
-    - python x.x
+    - python
 
 source:
     git_tag: {{ version }}

@@ -1,6 +1,9 @@
 {% set name = 'fftw' %}
 {% set version = '3.3.4' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: http://www.fftw.org

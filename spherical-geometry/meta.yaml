@@ -1,7 +1,10 @@
 {% set name = 'spherical-geometry' %}
 {% set reponame = 'spherical_geometry' %}
 {% set version = '1.0.12' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/spacetelescope/{{ reponame }}
@@ -20,13 +23,13 @@ requirements:
     - astropy >=1.1
     - matplotlib
     - setuptools
-    - numpy
-    - python x.x
+    - numpy {{ numpy }}
+    - python {{ python }}
     run:
     - astropy >=1.1
     - matplotlib
     - numpy
-    - python x.x
+    - python
 
 source:
     git_tag: {{ version }}

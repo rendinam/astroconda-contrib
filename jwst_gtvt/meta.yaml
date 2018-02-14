@@ -1,6 +1,9 @@
 {% set name = 'jwst_gtvt' %}
 {% set version = '0.1.0' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -20,15 +23,15 @@ requirements:
     build:
     - astropy
     - matplotlib
-    - numpy
+    - numpy {{ numpy }}
     - setuptools
-    - python x.x
+    - python {{ python }}
 
     run:
     - astropy
     - matplotlib
     - numpy
-    - python x.x
+    - python
 
 source:
     git_tag: {{ version }}

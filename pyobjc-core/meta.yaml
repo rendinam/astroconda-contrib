@@ -1,6 +1,9 @@
 {% set name = 'pyobjc-core' %}
 {% set version = '3.1.1' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: http://pyobjc.sourceforge.net/
@@ -19,9 +22,9 @@ package:
 requirements:
     build:
     - setuptools
-    - python x.x
+    - python {{ python }}
     run:
-    - python x.x
+    - python
 
 source:
     fn: pyobjc-{{ version }}.tar.gz

@@ -1,6 +1,9 @@
 {% set name = 'stsci-hst' %}
 {% set version = '3.0.1' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: http://ssb.stsci.edu
@@ -16,7 +19,6 @@ package:
 
 requirements:
     run:
-    - purge_path >=1.0.0
     - acstools >=2.0.8
     - astropy >=1.3
     - calcos >=3.2.1

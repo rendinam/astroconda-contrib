@@ -1,6 +1,9 @@
 {% set name = 'stsci.sphinxext' %}
 {% set version = '1.2.2' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -21,11 +24,11 @@ requirements:
     - numpydoc
     - stsci.distutils
     - setuptools
-    - python x.x
+    - python {{ python }}
     run:
     - numpydoc
     - stsci.distutils
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/spacetelescope/{{ name }}.git

@@ -1,6 +1,9 @@
 {% set name = 'pyds9' %}
 {% set version = "1.9.0.dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
-{% set number = '1' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '2' %}
 
 about:
     home: https://github.com/ericmandel/{{ name }}
@@ -23,14 +26,14 @@ requirements:
     - ds9
     - six
     - setuptools
-    - numpy
-    - python x.x
+    - numpy {{ numpy }}
+    - python {{ python }}
     run:
     - astropy
     - ds9
     - six
     - numpy
-    - python x.x
+    - python
 
 source:
     git_rev: 3761d7ac151f8c8729d0fb6cdba017cadf278283

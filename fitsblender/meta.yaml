@@ -1,6 +1,9 @@
 {% set name = 'fitsblender' %}
 {% set version = '0.3.2' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: http://github.com/spacetelescope/{{ name }}
@@ -21,13 +24,13 @@ requirements:
     - stsci.distutils
     - stsci.tools
     - setuptools
-    - numpy
-    - python x.x
+    - numpy {{ numpy }}
+    - python {{ python }}
     run:
     - astropy >=1.1
     - stsci.tools
     - numpy
-    - python x.x
+    - python
 
 source:
     git_tag: {{ version }}

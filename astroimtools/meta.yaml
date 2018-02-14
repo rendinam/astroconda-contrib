@@ -1,7 +1,10 @@
 {% set name = 'astroimtools' %}
 {% set version = '0.1.1' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
 {% set tag = 'v' + version %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -21,14 +24,14 @@ requirements:
     - cython
     - matplotlib
     - setuptools
-    - numpy
-    - python x.x
+    - numpy {{ numpy }}
+    - python {{ python }}
     run:
     - astropy >=1.1
     - cython
     - matplotlib
     - numpy
-    - python x.x
+    - python
 
 source:
     git_tag: {{ tag }}

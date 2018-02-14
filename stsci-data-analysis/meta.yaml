@@ -1,6 +1,9 @@
 {% set name = 'stsci-data-analysis' %}
 {% set version = '2.1.0' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: http://ssb.stsci.edu
