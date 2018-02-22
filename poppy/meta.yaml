@@ -1,7 +1,10 @@
 {% set name = 'poppy' %}
 {% set version = '0.6.1' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
 {% set tag = 'v' + version %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/mperrin/{{ name }}
@@ -20,13 +23,13 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - numpy
+    - numpy {{ numpy }}
     - scipy
     - matplotlib
     - six [py27]
     - enum34 [py27]
     - setuptools
-    - python x.x
+    - python {{ python }}
     run:
     - astropy >=1.1
     - numpy
@@ -35,7 +38,7 @@ requirements:
     - six [py27]
     - enum34 [py27]
     - setuptools
-    - python x.x
+    - python
 
 source:
     git_tag: {{ tag }}

@@ -1,6 +1,9 @@
 {% set name = 'pyraf' %}
 {% set version = '2.1.11' %}
-{% set number = '1' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '3' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -18,6 +21,7 @@ package:
 requirements:
     build:
     - d2to1
+    - stsci.distutils
     - astropy >=1.1
     - ipython
     - matplotlib
@@ -26,8 +30,8 @@ requirements:
     - pyobjc-framework-quartz >=3.0.4 [osx]
     - stsci.tools
     - setuptools
-    - numpy
-    - python x.x
+    - numpy {{ numpy }}
+    - python {{ python }}
     run:
     - astropy >=1.1
     - ipython
@@ -37,7 +41,7 @@ requirements:
     - pyobjc-framework-quartz >=3.0.4 [osx]
     - stsci.tools
     - numpy
-    - python x.x
+    - python
 
 source:
     git_tag: {{ version }}

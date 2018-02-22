@@ -1,7 +1,10 @@
 {% set name = 'webbpsf' %}
 {% set version = '0.6.0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
 {% set tag = 'v' + version %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://webbpsf.readthedocs.io
@@ -20,14 +23,14 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - numpy
+    - numpy {{ numpy }}
     - scipy
     - matplotlib
     - poppy >=0.6.1
     - six [py27]
     - webbpsf-data ==0.6.0
     - setuptools
-    - python x.x
+    - python {{ python }}
     - ipywidgets
     - jwxml
     run:
@@ -39,7 +42,7 @@ requirements:
     - six [py27]
     - webbpsf-data ==0.6.0
     - setuptools
-    - python x.x
+    - python
     - ipywidgets
     - jwxml
 

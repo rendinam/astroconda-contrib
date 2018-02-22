@@ -1,6 +1,9 @@
 {% set name = 'relic' %}
 {% set version = '1.0.5' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: http://github.com/jhunkeler/{{ name }}
@@ -17,9 +20,9 @@ package:
 requirements:
     build:
     - setuptools
-    - python x.x
+    - python {{ python }}
     run:
-    - python x.x
+    - python
 
 source:
     git_tag: {{ version }}

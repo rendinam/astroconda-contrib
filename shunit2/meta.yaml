@@ -1,6 +1,9 @@
 {% set name = 'shunit2' %}
 {% set version = '2.0.3' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: http://sourceforge.net/projects/{{ version }}

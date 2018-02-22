@@ -1,6 +1,9 @@
 {% set name = 'sphinxcontrib-programoutput' %}
 {% set version = '0.8' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: https://pypi.python.org/packages/source/s/{{ name }}
@@ -20,10 +23,10 @@ requirements:
     build:
     - sphinx
     - setuptools
-    - python x.x
+    - python {{ python }}
     run:
     - sphinx
-    - python x.x
+    - python
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz

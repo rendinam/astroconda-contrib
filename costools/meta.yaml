@@ -1,6 +1,9 @@
 {% set name = 'costools' %}
 {% set version = '1.2.1' %}
-{% set number = '1' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '3' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -22,15 +25,15 @@ requirements:
     - calcos
     - stsci.tools
     - setuptools
-    - numpy
-    - python x.x
+    - numpy {{ numpy }}
+    - python {{ python }}
     run:
     - astropy >=1.1
     - calcos
     - stsci.tools
     - setuptools
     - numpy
-    - python x.x
+    - python
 
 source:
     git_tag: {{ version }}

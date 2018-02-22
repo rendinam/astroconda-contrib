@@ -1,6 +1,9 @@
 {% set name = 'htc_utils' %}
 {% set version = '0.1.0' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/jhunkeler/{{ name }}
@@ -18,10 +21,10 @@ requirements:
     build:
     - argparse [py26]
     - setuptools
-    - python x.x
+    - python {{ python }}
     run:
     - argparse [py26]
-    - python x.x
+    - python
 
 source:
     git_tag: {{ version }}

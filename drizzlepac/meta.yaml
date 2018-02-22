@@ -1,6 +1,9 @@
 {% set name = 'drizzlepac' %}
 {% set version = '2.1.21' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -16,10 +19,12 @@ package:
 
 requirements:
     build:
+    - d2to1
+    - stsci.distutils
     - astropy >=1.1
     - fitsblender
     - nictools
-    - numpy
+    - numpy {{ numpy }}
     - scipy
     - stsci.convolve
     - stsci.distutils
@@ -33,7 +38,7 @@ requirements:
     - stsci.tools
     - stwcs
     - pyregion
-    - python x.x
+    - python {{ python }}
     - setuptools
     run:
     - astropy >=1.1
@@ -53,7 +58,7 @@ requirements:
     - stwcs
     - pyregion
     - setuptools
-    - python x.x
+    - python
 
 source:
     git_tag: {{ version }}

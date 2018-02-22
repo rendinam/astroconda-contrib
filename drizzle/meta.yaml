@@ -1,6 +1,9 @@
 {% set name = 'drizzle' %}
 {% set version = '1.5' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -22,13 +25,13 @@ requirements:
     build:
     - astropy >=1.1
     - setuptools
-    - numpy
-    - python x.x
+    - numpy {{ numpy }}
+    - python {{ python }}
 
     run:
     - astropy >=1.1
     - numpy
-    - python x.x
+    - python
 
 test:
     imports:

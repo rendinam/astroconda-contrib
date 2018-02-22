@@ -1,6 +1,9 @@
 {% set name = 'jwst_coronagraph_visibility' %}
 {% set version = '0.3.0' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     # Package homepage
@@ -26,14 +29,14 @@ source:
 requirements:
     build:
     - setuptools
-    - python x.x
-    - numpy
+    - python {{ python }}
+    - numpy {{ numpy }}
     - matplotlib
     - tk
     - requests
     - jwxml >=0.3.0
     run:
-    - python x.x
+    - python
     - numpy
     - matplotlib
     - requests

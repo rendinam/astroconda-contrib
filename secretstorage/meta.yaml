@@ -1,6 +1,9 @@
 {% set name = 'secretstorage' %}
 {% set version = '2.3.1' %}
-{% set number = '0' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
   home: https://github.com/mitya57/{{ name }}
@@ -22,7 +25,7 @@ source:
 
 requirements:
   build:
-    - python
+    - python {{ python }}
     - dbus-python
     - setuptools
     - cryptography

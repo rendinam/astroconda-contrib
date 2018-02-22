@@ -1,6 +1,9 @@
 {% set name = 'stsci.image' %}
 {% set version = '2.2.0' %}
-{% set number = '1' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '2' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -20,18 +23,18 @@ requirements:
     build:
     - d2to1
     - astropy >=1.1
-    - numpy
+    - numpy {{ numpy }}
     - scipy
     - stsci.distutils
     - stsci.tools
     - setuptools
-    - python x.x
+    - python {{ python }}
     run:
     - astropy >=1.1
     - numpy
     - scipy
     - stsci.tools
-    - python x.x
+    - python
 
 source:
     git_tag: {{ version }}

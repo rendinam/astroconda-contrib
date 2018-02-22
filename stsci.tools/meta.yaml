@@ -1,5 +1,8 @@
 {% set name = 'stsci.tools' %}
-{% set version = '3.4.11' %}
+{% set version = '3.4.12' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
 {% set number = '0' %}
 
 about:
@@ -18,19 +21,16 @@ package:
 
 requirements:
     build:
-    - d2to1
     - astropy >=1.1
-    - pytools
     - setuptools
-    - stsci.distutils
-    - numpy
-    - python x.x
+    - pytest-runner
+    - numpy {{ numpy }}
+    - python {{ python }}
+
     run:
     - astropy >=1.1
     - numpy
-    - pytools
-    - stsci.distutils
-    - python x.x
+    - python
 
 source:
     git_tag: {{ version }}

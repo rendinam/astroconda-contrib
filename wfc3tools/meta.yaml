@@ -1,6 +1,9 @@
 {% set name = 'wfc3tools' %}
 {% set version = '1.3.4' %}
-{% set number = '1' %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '2' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -17,16 +20,16 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - numpy
+    - numpy {{ numpy }}
     - setuptools
-    - python x.x
+    - python {{ python }}
     - matplotlib
     - scipy
     - stsci.tools
     run:
     - astropy >=1.1
     - numpy
-    - python x.x
+    - python
     - stsci.tools
     - matplotlib
     - scipy

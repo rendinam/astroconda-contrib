@@ -1,14 +1,16 @@
-{% set name = 'pyregion' %}
-{% set version = '2.0' %}
+{% set name = 'radio-beam' %}
+{% set reponame = 'radio_beam' %}
+{% set tag = 'v0.2' %}
+{% set version = tag %}
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
 {% set number = '0' %}
 
 about:
-    home: https://github.com/astropy/{{ name }}
+    home: https://github.com/radio-astro-tools/{{ reponame }}
     license: BSD
-    summary: Python parser for ds9 region files
+    summary: This package provides tools for working with beams in radio data.
 
 build:
     number: {{ number }}
@@ -20,23 +22,19 @@ package:
 requirements:
     build:
     - astropy
-    - cython
     - numpy {{ numpy }}
-    - pyparsing
     - python {{ python }}
     - setuptools
+
     run:
     - astropy
-    - cython
     - numpy
-    - pyparsing
-    - setuptools
     - python
 
 source:
-    git_tag: {{ version }}
-    git_url: https://github.com/astropy/{{ name }}.git
+    git_tag: {{ tag }}
+    git_url: https://github.com/radio-astro-tools/{{ reponame }}.git
 
 test:
     imports:
-    - pyregion
+    - radio_beam
