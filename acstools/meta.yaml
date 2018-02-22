@@ -1,9 +1,9 @@
 {% set name = 'acstools' %}
-{% set version = '2.0.9' %}
+{% set version = '2.0.10' %}
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '2' %}
+{% set number = '0' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
