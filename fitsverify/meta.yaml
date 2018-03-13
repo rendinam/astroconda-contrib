@@ -22,11 +22,11 @@ package:
 
 requirements:
     build:
-    - cfitsio
+    - cfitsio >=3.430
     - pkg-config [osx]
 
     run:
-    - cfitsio
+    - cfitsio >=3.430
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz

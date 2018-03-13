@@ -23,7 +23,7 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - cfitsio
+    - cfitsio >=3.430
     - numpy {{ numpy }}
     - requests
     - lxml
@@ -34,7 +34,7 @@ requirements:
 
     run:
     - astropy >=1.1
-    - cfitsio
+    - cfitsio >=3.430
     - numpy
     - requests
     - lxml
