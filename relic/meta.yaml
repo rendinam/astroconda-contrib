@@ -1,8 +1,5 @@
 {% set name = 'relic' %}
 {% set version = '1.0.5' %}
-{% if version[0] == 'v' %}
-{%   set version = version[1:] %}
-{% endif %}
 {% set number = '1' %}
 
 about:

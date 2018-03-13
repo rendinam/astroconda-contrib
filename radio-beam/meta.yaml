@@ -2,9 +2,6 @@
 {% set reponame = 'radio_beam' %}
 {% set tag = 'v0.2' %}
 {% set version = tag %}
-{% if version[0] == 'v' %}
-{%   set version = version[1:] %}
-{% endif %}
 {% set number = '0' %}
 
 about:

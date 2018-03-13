@@ -1,8 +1,5 @@
 {% set name = 'stsci.image' %}
 {% set version = '2.2.0' %}
-{% if version[0] == 'v' %}
-{%   set version = version[1:] %}
-{% endif %}
 {% set number = '2' %}
 
 about:
