@@ -1,8 +1,5 @@
 {% set name = 'reftools' %}
 {% set version = '1.7.4' %}
-{% if version[0] == 'v' %}
-{%   set version = version[1:] %}
-{% endif %}
 {% set number = '1' %}
 
 about:

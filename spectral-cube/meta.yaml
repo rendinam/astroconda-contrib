@@ -1,9 +1,6 @@
 {% set name = 'spectral-cube' %}
 {% set version = 'v0.4.1' %}
 {% set tag = version %}
-{% if version[0] == 'v' %}
-{%   set version = version[1:] %}
-{% endif %}
 {% set number = '0' %}
 
 about:

@@ -1,8 +1,5 @@
 {% set name = 'dbus-glib' %}
 {% set version = '0.108' %}
-{% if version[0] == 'v' %}
-{%   set version = version[1:] %}
-{% endif %}
 {% set number = '1' %}
 {% set archive = name + '-' + version + '.tar.gz' %}
 
