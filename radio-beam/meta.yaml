@@ -1,7 +1,7 @@
 {% set name = 'radio-beam' %}
 {% set reponame = 'radio_beam' %}
-{% set tag = 'v0.2' %}
-{% set version = tag %}
+{% set version = '0.2' %}
+{% set tag = 'v' + version %}
 {% set number = '0' %}
 
 about:
