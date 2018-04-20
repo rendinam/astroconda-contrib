@@ -1,5 +1,5 @@
 {% set name = 'stsci.skypac' %}
-{% set version = '0.9.8' %}
+{% set version = '0.9.10' %}
 {% set number = '1' %}
 
 about:
