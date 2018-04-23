@@ -21,7 +21,7 @@ requirements:
     - astropy >=1.1
     - stsci.distutils
     - stsci.imagestats
-    - stsci.sphere
+    - spherical-geometry
     - stsci.tools
     - stwcs
     - setuptools
@@ -30,7 +30,7 @@ requirements:
     run:
     - astropy >=1.1
     - stsci.imagestats
-    - stsci.sphere
+    - spherical-geometry
     - stsci.tools
     - stwcs
     - python
