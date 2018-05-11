@@ -1,5 +1,5 @@
 {% set name = 'crds' %}
-{% set version = '7.1.5' %}
+{% set version = '7.2.2' %}
 {% set number = '4' %}
 
 about:
