@@ -1,5 +1,5 @@
 {% set name = 'stsci.skypac' %}
-{% set version = '0.9.11' %}
+{% set version = '0.9.12' %}
 {% set number = '0' %}
 
 about:
@@ -19,7 +19,7 @@ requirements:
     build:
     - astropy >=1.1
     - stsci.imagestats
-    - spherical-geometry
+    - spherical-geometry >=1.2.2
     - stsci.tools
     - stwcs
     - sphinx
@@ -29,7 +29,7 @@ requirements:
     run:
     - astropy >=1.1
     - stsci.imagestats
-    - spherical-geometry
+    - spherical-geometry >=1.2.2
     - stsci.tools
     - stwcs
     - python
