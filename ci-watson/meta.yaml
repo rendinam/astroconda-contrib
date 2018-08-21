@@ -1,0 +1,34 @@
+{% set name = 'ci-watson' %}
+{% set reponame = 'ci_watson' %}
+{% set version = '0.1' %}
+{% set number = '0' %}
+
+about:
+    home: https://github.com/spacetelescope/{{ reponame }}
+    license: BSD
+    summary: CI helper for STScI Jenkins
+
+build:
+    number: {{ number }}
+    skip: true  # [py2k]
+
+package:
+    name: {{ name }}
+    version: {{ version }}
+
+requirements:
+    build:
+    - pytest
+    - setuptools
+    - python {{ python }}
+    run:
+    - pytest
+    - python
+
+source:
+    git_tag: {{ version }}
+    git_url: https://github.com/spacetelescope/{{ reponame }}.git
+
+test:
+    imports:
+    - ci_watson
