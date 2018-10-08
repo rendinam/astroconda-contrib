@@ -20,18 +20,22 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - cfitsio >=3.430
+    - cfitsio >=3.440
     - numpy {{ numpy }}
     - requests
     - lxml
     - parsley
-    - setuptools
     - filelock
+    - setuptools
+<<<<<<< HEAD
+    - filelock
+=======
+>>>>>>> d75fa7d104a59296efa95bafb7c17b46e7e18dd6
     - python {{ python }}
 
     run:
     - astropy >=1.1
-    - cfitsio >=3.430
+    - cfitsio
     - numpy
     - requests
     - lxml
