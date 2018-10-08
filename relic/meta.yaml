@@ -23,7 +23,7 @@ requirements:
 
 source:
     git_tag: {{ version }}
-    git_url: https://github.com/jhunkeler/{{ name }}.git
+    git_url: https://github.com/spacetelescope/{{ name }}.git
 
 test:
     imports:
