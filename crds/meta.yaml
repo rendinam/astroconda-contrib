@@ -1,6 +1,6 @@
 {% set name = 'crds' %}
-{% set version = '7.2.4' %}
-{% set number = '4' %}
+{% set version = '7.2.6' %}
+{% set number = '0' %}
 
 about:
     home: http://www.stsci.edu/hst/observatory/crds/
@@ -27,10 +27,6 @@ requirements:
     - parsley
     - filelock
     - setuptools
-<<<<<<< HEAD
-    - filelock
-=======
->>>>>>> d75fa7d104a59296efa95bafb7c17b46e7e18dd6
     - python {{ python }}
 
     run:
