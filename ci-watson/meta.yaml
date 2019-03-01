@@ -20,6 +20,7 @@ requirements:
     build:
     - pytest
     - setuptools
+    - atomicwrites=1.2.1
     - python {{ python }}
     run:
     - pytest
