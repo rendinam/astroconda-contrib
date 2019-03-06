@@ -15,12 +15,14 @@ package:
 requirements:
     build:
     - astropy >=2
+    - beautifulsoup4
     - stsci.tools
     - numpy {{ numpy }}
     - setuptools
     - python {{ python }}
     run:
     - astropy >=2
+    - beautifulsoup4
     - scikit-image
     - stsci.tools
     - matplotlib
