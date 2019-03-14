@@ -1,5 +1,5 @@
 {% set name = 'tweakwcs' %}
-{% set version = '0.4.3' %}
+{% set version = '0.4.5' %}
 {% set number = '0' %}
 about:
     home: https://github.com/spacetelescope/{{ name }}
