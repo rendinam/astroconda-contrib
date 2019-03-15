@@ -21,6 +21,9 @@ requirements:
     - scipy
     - stsci.distutils
     - stsci.tools
+    - stsci_rtd_theme
+    - sphinx_rtd_theme
+    - numpydoc
     - setuptools
     - numpy {{ numpy }}
     - python {{ python }}
