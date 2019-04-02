@@ -31,7 +31,7 @@ requirements:
     - asteval
     - astropy
     - glue-core >=0.14
-    - numpy >= 1.13
+    - numpy >=1.13
     - pytest
     - specviz >=0.7.0
     - spectral-cube >=0.4.4
