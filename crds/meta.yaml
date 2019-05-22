@@ -1,5 +1,5 @@
 {% set name = 'crds' %}
-{% set version = '7.3.0' %}
+{% set version = '7.3.3' %}
 {% set number = '0' %}
 
 about:
@@ -29,6 +29,7 @@ requirements:
     - filelock
     - setuptools
     - python {{ python }}
+    - asdf    
 
     run:
     - astropy >=1.1
@@ -40,6 +41,7 @@ requirements:
     - parsley
     - filelock
     - python
+    - asdf
 
 source:
     git_tag: {{ version }}
