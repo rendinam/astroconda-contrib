@@ -1,6 +1,6 @@
 {% set name = 'stsci.tools' %}
-{% set version = '3.4.13' %}
-{% set number = '1' %}
+{% set version = '3.5.2' %}
+{% set number = '0' %}
 
 about:
     home: https://github.com/spacetelescope/stsci.tools
