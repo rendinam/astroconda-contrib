@@ -1,5 +1,5 @@
 {% set name = 'drizzlepac' %}
-{% set version = '2.2.6' %}
+{% set version = '3.0.2' %}
 {% set number = '0' %}
 
 about:
@@ -16,49 +16,51 @@ package:
 
 requirements:
     build:
-      - astropy >=1.1
-      - fitsblender
-      - graphviz
-      - nictools
-      - numpydoc
-      - numpy {{ numpy }}
-      - scipy
-      - stsci.convolve
-      - stsci.distutils
-      - stsci.image
-      - stsci.imagemanip
-      - stsci.imagestats
-      - stsci.ndimage
-      - stsci.skypac
-      - spherical-geometry
-      - sphinx
-      - sphinx_rtd_theme
-      - stsci_rtd_theme
-      - stsci.stimage
-      - stsci.tools
-      - stwcs
-      - stregion
-      - python {{ python }}
-      - setuptools
+    - acstools
+    - astropy>=3.1.2
+    - astroquery
+    - fitsblender
+    - graphviz
+    - lxml
+    - nictools
+    - nose
+    - scipy
+    - spherical-geometry
+    - stsci.image
+    - stsci.imagestats
+    - stsci.skypac
+    - stsci.stimage
+    - stwcs
+    - stregion
+    - setuptools
+    - photutils
+    - pysynphot
+    - tweakwcs
+    - numpy {{ numpy }}
+    #- numpy
+    - python {{ python }}
     run:
-      - astropy >=1.1
-      - fitsblender
-      - nictools
-      - numpy
-      - scipy
-      - stsci.convolve
-      - stsci.image
-      - stsci.imagemanip
-      - stsci.imagestats
-      - stsci.ndimage
-      - stsci.skypac
-      - spherical-geometry
-      - stsci.stimage
-      - stsci.tools
-      - stwcs
-      - stregion
-      - setuptools
-      - python
+    - acstools
+    - astropy
+    - astroquery
+    - fitsblender
+    - nictools
+    - nose
+    - lxml
+    - scipy
+    - spherical-geometry
+    - stsci.image
+    - stsci.imagestats
+    - stsci.skypac
+    - stsci.stimage
+    - stwcs
+    - stregion
+    - setuptools
+    - photutils
+    - pysynphot
+    - tweakwcs
+    - numpy
+    - python
 
 source:
     git_tag: {{ version }}
