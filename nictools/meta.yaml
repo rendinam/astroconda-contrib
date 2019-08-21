@@ -1,5 +1,5 @@
 {% set name = 'nictools' %}
-{% set version = '1.1.5Were these supposed to exist?' %}
+{% set version = '1.1.5' %}
 {% set number = '0' %}
 
 about:
@@ -21,7 +21,7 @@ requirements:
     - scipy
     - stsci.tools
     - setuptools
-    - setuptools_scmWere these supposed to exist?
+    - setuptools_scm
     - python {{ python }}
     run:
     - astropy >=1.1
