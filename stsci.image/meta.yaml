@@ -1,5 +1,5 @@
 {% set name = 'stsci.image' %}
-{% set version = '2.3.2' %}
+{% set version = '2.3.3' %}
 {% set number = '0' %}
 
 about:
@@ -24,6 +24,7 @@ requirements:
     - stsci.distutils
     - stsci.tools
     - setuptools
+    - setuptools_scm
     - python {{ python }}
     run:
     - astropy >=1.1
