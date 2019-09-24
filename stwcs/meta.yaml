@@ -22,8 +22,9 @@ requirements:
     - lxml
     - pytest
     - requests
-    - stsci.tools >= 3.6
+    - stsci.tools >=3.6
     - setuptools
+    - setuptools_scm
     - numpy {{ numpy }}
     - python {{ python }}
     run:
