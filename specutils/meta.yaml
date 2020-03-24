@@ -1,7 +1,7 @@
 {% set name = 'specutils' %}
 {% set version = '1.0' %}
 {% set tag = 'v' + version %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/astropy/specutils
@@ -22,6 +22,7 @@ source:
 
 requirements:
     build:
+    - asdf
     - astropy
     - scipy
     - gwcs
@@ -30,6 +31,7 @@ requirements:
     - numpy {{ numpy }}
     - python {{ python }}
     run:
+    - asdf
     - astropy
     - scipy
     - gwcs
