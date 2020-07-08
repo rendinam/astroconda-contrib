@@ -1,5 +1,5 @@
 {% set name = 'hstcal' %}
-{% set version = '2.3.3' %}
+{% set version = '2.4.0' %}
 {% set number = '0' %}
 
 about:
