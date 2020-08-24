@@ -1,5 +1,5 @@
 {% set name = 'drizzlepac' %}
-{% set version = '3.1.6' %}
+{% set version = '3.1.8' %}
 {% set number = '0' %}
 
 about:
@@ -19,6 +19,7 @@ requirements:
     - acstools
     - astropy>=3.1.2
     - astroquery
+    - bokeh
     - fitsblender
     - graphviz
     - jeepney
@@ -35,15 +36,19 @@ requirements:
     - stwcs
     - stregion
     - setuptools
+    - pandas
     - photutils
     - pysynphot
+    - pypdf2
+    - pytables
     - tweakwcs
-    - numpy {{ numpy }}
+    - numpy
     - python {{ python }}
     run:
     - acstools
     - astropy
     - astroquery
+    - bokeh
     - fitsblender
     - nictools
     - nose
@@ -59,8 +64,11 @@ requirements:
     - stwcs
     - stregion
     - setuptools
+    - pandas
     - photutils
     - pysynphot
+    - pypdf2
+    - pytables
     - tweakwcs
     - numpy
     - python
